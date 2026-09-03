@@ -3,132 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIKASIVISIONS | Capture. Create. Inspire.</title>
+<title>SIKASIVISIONS — Premium Creative House | Pietermaritzburg</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff}
-.top{background:#fff;color:#000;text-align:center;padding:8px;font-weight:900;font-size:9px;letter-spacing:3px}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(8,8,8,0.95);position:sticky;top:0;z-index:99;border-bottom:1px solid #222}
-.logo{display:flex;gap:10px;align-items:center}
-.logo img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #fff;background:#fff}
-.logo-txt{font-weight:900;font-size:14px;letter-spacing:2px}
-.logo-txt small{display:block;font-size:7px;letter-spacing:2px;color:#888;margin-top:2px}
-.nav-btn{background:#fff;color:#000;border:none;padding:10px 16px;border-radius:30px;font-weight:900;font-size:11px}
-.hero{position:relative;padding:40px 20px;text-align:center}
-.hero-bg{position:absolute;inset:0;z-index:-1}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.25}
-.hero-bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,0.1),#080808 85%)}
-.hero-logo{width:120px;height:120px;margin:0 auto 12px auto;border-radius:50%;background:#fff;padding:5px}
-.hero-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
-.badge{display:inline-block;border:1px solid #333;background:#111;padding:7px 14px;border-radius:30px;font-size:9px;font-weight:800;letter-spacing:1.5px}
-.hero h1{font-size:42px;font-weight:900;margin-top:14px;letter-spacing:3px}
-.hero p.slogan{font-size:10px;letter-spacing:4px;color:#aaa;margin-top:6px;font-weight:800}
-.hero p.desc{color:#999;margin:14px auto 0 auto;max-width:340px;font-size:12px;line-height:1.6}
-.hero-btns{margin-top:20px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.btn{padding:13px 20px;border-radius:30px;font-weight:900;text-decoration:none;font-size:11px}
-.btn-white{background:#fff;color:#000}
-.btn-dark{background:#1a1a1a;color:#fff;border:1px solid #333}
-.grid{padding:20px 16px;background:#FFFBF7;color:#000;border-radius:32px 32px 0 0}
-.head{text-align:center}
-.head p{font-size:9px;letter-spacing:4px;font-weight:900;color:#999}
-.head h2{font-size:30px;font-weight:900;line-height:0.9;margin-top:8px}
-.card{background:#fff;border:1px solid #eee;border-radius:22px;padding:18px;margin-top:12px}
-.card.dark{background:#111;color:#fff;border-color:#222}
-.card h3{font-size:16px;font-weight:900}
-.card p{font-size:11px;color:#666;margin-top:6px;line-height:1.5}
-.card.dark p{color:#888}
-.gallery{padding:20px 16px;background:#080808}
-.gallery h2{text-align:center;font-size:28px;font-weight:900}
-.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-.gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:14px;border:1px solid #222}
-.contact{padding:22px 16px;border-top:1px solid #222}
-.contact h2{font-size:32px;font-weight:900;line-height:0.9}
-.input{width:100%;background:#141414;border:1px solid #2a2a2a;padding:13px 16px;border-radius:30px;color:#fff;margin-top:10px;font-size:12px;outline:none}
-.send{width:100%;border:none;padding:14px;border-radius:30px;font-weight:900;margin-top:10px;font-size:12px}
-.send-w{background:#fff;color:#000}
-.send-d{background:#222;color:#fff;border:1px solid #333}
-.info-box{background:#141414;padding:12px;border-radius:12px;border:1px solid #222}
-.footer{text-align:center;padding:16px;color:#666;font-size:8px;letter-spacing:1.2px;line-height:1.6}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#060606;color:#fff;overflow-x:hidden}
+.bebas{font-family:'Bebas Neue',sans-serif;letter-spacing:1px}
+.glass{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.ticker{background:linear-gradient(90deg,#fff 0%,#f5f0e8 100%);color:#000;display:flex;overflow:hidden;white-space:nowrap;padding:10px 0;border-bottom:1px solid #e9e2d0}
+.ticker-track{display:flex;animation:scroll 22s linear infinite;gap:40px}
+.ticker-track span{font-weight:900;font-size:10px;letter-spacing:3px}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.nav{position:fixed;top:36px;left:12px;right:12px;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgba(10,10,10,0.7);border:1px solid rgba(255,255,255,0.12);border-radius:100px}
+.nav img{width:38px;height:38px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.nav-links{display:flex;gap:6px}
+.nav-links a{padding:9px 14px;border-radius:30px;font-size:9px;font-weight:800;letter-spacing:1px;text-decoration:none}
+.nav-dark{background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.12)}
+.nav-white{background:#fff;color:#000}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 18px 40px 18px;position:relative}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%) brightness(0.4)}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(168,85,247,0.25),transparent 60%),radial-gradient(circle at 80% 80%,rgba(251,191,36,0.18),transparent 50%)}
+.hero h1{font-size:84px;line-height:0.85;letter-spacing:-2px}
+.hero h1 .outline{-webkit-text-stroke:1px rgba(255,255,255,0.4);color:transparent}
+.hero h1 .gold{color:#f5d76e;background:linear-gradient(90deg,#f5d76e,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{margin-top:14px;max-width:380px;color:#aaa;font-size:13px;line-height:1.6}
+.hero-btns{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.btn{padding:15px 26px;border-radius:40px;font-weight:900;font-size:11px;letter-spacing:1px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-gold{background:linear-gradient(135deg,#f5d76e,#d4a017);color:#000;box-shadow:0 10px 30px rgba(245,215,110,0.3)}
+.btn-ghost{background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.panel{padding:28px 18px;position:relative;overflow:hidden}
+.panel-photo{background:#fdf8ef;color:#111}
+.panel-music{background:#0f0a1a;color:#fff;border-left:1px solid rgba(168,85,247,0.2)}
+.label{font-size:9px;letter-spacing:4px;font-weight:900;color:#b89a50}
+.label.purple{color:#a855f7}
+.panel h2{font-family:'Bebas Neue';font-size:44px;line-height:0.9;margin-top:10px}
+.panel p{font-size:12px;line-height:1.7;margin-top:10px;color:#555}
+.panel-music p{color:#a1a1aa}
+.feature{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.feat{display:flex;gap:10px;align-items:center;font-size:11px;font-weight:700}
+.feat i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal}
+.photo-i{background:#111;color:#f5d76e}
+.music-i{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3)}
+.gallery{background:#060606;padding:30px 14px}
+.g-head{display:flex;justify-content:space-between;align-items:end}
+.g-head h2{font-family:'Bebas Neue';font-size:42px;line-height:0.9}
+.g-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:10px;margin-top:16px}
+.g-grid img{width:100%;border-radius:20px;object-fit:cover;border:1px solid #1e1e1e}
+.g-large{height:360px}
+.g-small{height:175px}
+.g-stack{display:grid;gap:10px}
+/* NEW QUOTE SECTION - NO PRICES */
+.quote-section{background:#fdf8ef;color:#000;padding:32px 16px;border-radius:40px 40px 0 0;margin-top:10px;text-align:center}
+.quote-box{background:#0f0a1a;color:#fff;border-radius:28px;padding:22px 18px;margin-top:18px;border:1px solid #221a33;position:relative;overflow:hidden}
+.quote-box:before{content:'';position:absolute;top:-50px;right:-50px;width:150px;height:150px;background:radial-gradient(circle,rgba(168,85,247,0.3),transparent 70%);border-radius:50%}
+.input-dark{width:100%;background:#1a122c;border:1px solid #2a1f3d;padding:14px 18px;border-radius:30px;color:#fff;margin-top:10px;font-size:12px;outline:none}
+.input-dark::placeholder{color:#777}
+.footer{background:#060606;padding:26px 16px;text-align:center;border-top:1px solid #111}
+@media(max-width:700px){
+.hero h1{font-size:68px}
+.split{grid-template-columns:1fr}
+.g-grid{grid-template-columns:1fr}
+.g-large{height:300px}
+.nav{top:44px}
+}
 </style>
 </head>
 <body>
-<div class="top">SIKASIVISIONS — CAPTURE. CREATE. INSPIRE. — SOUTH AFRICA</div>
-<div class="nav">
-  <div class="logo">
-    <img src="logo.jpg" alt="Logo">
-    <div class="logo-txt">SIKASIVISIONS<small>CAPTURE. CREATE. INSPIRE.</small></div>
+
+<div class="ticker"><div class="ticker-track">
+<span>SIKASIVISIONS • CAPTURE. CREATE. INSPIRE • 084 731 1399 • INFO@SIKASIVISIONS.CO.ZA • PIETERMARITZBURG •</span>
+<span>SIKASIVISIONS • CAPTURE. CREATE. INSPIRE • 084 731 1399 • INFO@SIKASIVISIONS.CO.ZA • PIETERMARITZBURG •</span>
+<span>SIKASIVISIONS • CAPTURE. CREATE. INSPIRE • 084 731 1399 • INFO@SIKASIVISIONS.CO.ZA • PIETERMARITZBURG •</span>
+</div></div>
+
+<div class="nav glass">
+  <div style="display:flex;gap:10px;align-items:center">
+    <img src="logo.jpg">
+    <div><div class="bebas" style="font-size:18px;line-height:1">SIKASIVISIONS</div><div style="font-size:7px;letter-spacing:2px;color:#999;font-weight:800">PHELELANI NTSHIZA • SA</div></div>
   </div>
-  <button class="nav-btn" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">BOOK</button>
+  <div class="nav-links">
+    <a href="#studio" class="nav-dark">STUDIO</a>
+    <a href="https://wa.me/27847311399?text=Sawubona%20SIKASIVISIONS" class="nav-white">BOOK NOW</a>
+  </div>
 </div>
 
 <div class="hero">
-  <div class="hero-bg"><img src="IMG-20260902-WA0079.jpg"></div>
-  <div class="hero-logo"><img src="logo.jpg"></div>
-  <div class="badge">PIETERMARITZBURG • PHOTOGRAPHY • MUSIC STUDIO</div>
-  <h1>SIKASIVISIONS</h1>
-  <p class="slogan">CAPTURE. CREATE. INSPIRE.</p>
-  <p class="desc">Owned by <b>Ntshiza</b>. Photography, Videography, Vocal Recording, Mixing, Mastering & Beat Making. Based in South Africa.</p>
+  <div class="hero-bg"><img src="IMG-20260902-WA0079.jpg"><div class="hero-glow"></div></div>
+  <div class="bebas" style="border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);padding:8px 16px;border-radius:30px;font-size:10px;letter-spacing:3px">EST. PIETERMARITZBURG — 2024</div>
+  <h1 class="bebas"><span class="outline">CAPTURE.</span><br>CREATE.<br><span class="gold">INSPIRE.</span></h1>
+  <p class="sub">Luxury photography, videography & professional music studio. Owned by <b style="color:#fff">Ntshiza</b>. We don't just shoot, we create legacy.</p>
   <div class="hero-btns">
-    <a class="btn btn-white" href="https://wa.me/27847311399?text=Sawubona%20SIKASIVISIONS">💬 WHATSAPP: 084 731 1399</a>
-    <a class="btn btn-dark" href="mailto:info@sikasivisions.co.za">✉️ EMAIL US</a>
+    <a href="https://wa.me/27847311399?text=Sawubona%20SIKASIVISIONS%2C%20Ngicela%20i-quote%20please" class="btn btn-gold">BOOK SESSION — 084 731 1399 →</a>
+    <a href="#work" class="btn btn-ghost">VIEW WORK</a>
   </div>
 </div>
 
-<div class="grid">
-  <div class="head"><p>OUR SERVICES</p><h2>Photo, Video<br>& Music Studio</h2></div>
-  
-  <div class="card">
-    <h3>📸 Photography & Videography</h3>
-    <p>Events, portraits, weddings, matric dance, corporate - high quality capture.</p>
+<div class="split" id="studio">
+  <div class="panel panel-photo">
+    <div class="label">01 — PHOTOGRAPHY</div>
+    <h2>LUXURY<br>PHOTO<br>& VIDEO</h2>
+    <p>Matric dance, weddings, corporate, family shoots. Sony A7IV + 50mm 1.8 crisp detail. South Africa based.</p>
+    <div class="feature">
+      <div class="feat"><i class="photo-i">✓</i> Events & Portraits</div>
+      <div class="feat"><i class="photo-i">✓</i> 4K Video & Drone</div>
+      <div class="feat"><i class="photo-i">✓</i> Same-day Previews</div>
+    </div>
+    <img src="IMG-20260902-WA0076.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:16px;margin-top:16px;border:1px solid #e9e2d0">
   </div>
-  <div class="card dark">
-    <h3>🎙️ Vocal Recording</h3>
-    <p>Professional studio for Amapiano, Hip Hop, Gospel, Afro House.</p>
-  </div>
-  <div class="card">
-    <h3>🎚️ Mixing & Mastering</h3>
-    <p>Make your song ready for Spotify, Apple Music, TikTok - loud & clean.</p>
-  </div>
-  <div class="card dark">
-    <h3>🥁 Beat Making / Production</h3>
-    <p>Custom beats - Amapiano, 3-Step, Afrobeat, Hip Hop, Gqom. Exclusive rights available.</p>
-  </div>
-</div>
-
-<div class="gallery">
-  <h2>Our Work</h2>
-  <div class="gallery-grid">
-    <img src="IMG-20260902-WA0079.jpg">
-    <img src="IMG-20260902-WA0077.jpg">
-    <img src="IMG-20260902-WA0076.jpg">
-    <img src="IMG-20260902-WA0075.jpg">
+  <div class="panel panel-music">
+    <div class="label purple">02 — MUSIC STUDIO</div>
+    <h2>RECORD.<br>MIX.<br>MASTER.</h2>
+    <p>FL Studio, Logic Pro, pro vocal booth. Amapiano, Hip Hop, Gospel, Afro House, Gqom. Label ready sound.</p>
+    <div class="feature">
+      <div class="feat"><i class="music-i">♫</i> Vocal Recording</div>
+      <div class="feat"><i class="music-i">♫</i> Mixing & Mastering</div>
+      <div class="feat"><i class="music-i">♫</i> Custom Beat Making</div>
+    </div>
+    <img src="IMG-20260902-WA0075.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:16px;margin-top:16px;border:1px solid #2a1f3d">
   </div>
 </div>
 
-<div class="contact" id="book">
-  <h2>Book<br>SIKASIVISIONS.</h2>
-  <p style="color:#888;margin-top:6px;font-size:11px">Tell us what you need - photo or studio session.</p>
-  <input id="d" class="input" placeholder="Date (e.g. 10 Sept 2026)">
-  <input id="s" class="input" placeholder="Service: Photography / Recording / Mixing / Beat">
-  <button class="send send-w" onclick="wa()">💬 BOOK ON WHATSAPP — 084 731 1399</button>
-  <button class="send send-d" onclick="em()">✉️ info@sikasivisions.co.za</button>
-  
-  <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
-    <div class="info-box"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">CALL / WHATSAPP</small><br><b style="font-size:12px">084 731 1399</b></div>
-    <div class="info-box"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">EMAIL</small><br><b style="font-size:9px">info@sikasivisions.co.za</b></div>
-    <div class="info-box" style="grid-column:1/3"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">OWNER</small><br><b style="font-size:11px">Ntshiza — South Africa</b></div>
+<div class="gallery" id="work">
+  <div class="g-head">
+    <h2 class="bebas">SELECTED<br><span style="color:#f5d76e">WORKS — 2024/26</span></h2>
+    <div style="font-size:9px;letter-spacing:2px;color:#666;text-align:right">SIKASIVISIONS<br>PIETERMARITZBURG</div>
+  </div>
+  <div class="g-grid">
+    <img src="IMG-20260902-WA0079.jpg" class="g-large">
+    <div class="g-stack">
+      <img src="IMG-20260902-WA0077.jpg" class="g-small">
+      <img src="IMG-20260902-WA0076.jpg" class="g-small">
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+    <img src="IMG-20260902-WA0075.jpg" style="height:180px;width:100%;object-fit:cover;border-radius:20px;border:1px solid #1e1e1e">
+    <div style="background:linear-gradient(135deg,#1a122c,#0f0a1a);border:1px solid #2a1f3d;border-radius:20px;padding:16px;display:flex;flex-direction:column;justify-content:center">
+      <div class="bebas" style="font-size:12px;letter-spacing:2px;color:#c084fc">OWNER / CREATIVE</div>
+      <div style="font-size:18px;font-weight:900;margin-top:6px">Ntshiza</div>
+      <div style="font-size:10px;color:#888;margin-top:4px">084 731 1399<br>info@sikasivisions.co.za<br>South Africa</div>
+    </div>
   </div>
 </div>
 
-<div class="footer">© 2026 SIKASIVISIONS • CAPTURE. CREATE. INSPIRE. • 084 731 1399 • INFO@SIKASIVISIONS.CO.ZA<br>PHOTOGRAPHY • VIDEOGRAPHY • RECORDING • MIXING • MASTERING • BEAT MAKING</div>
-<div style="text-align:center;padding:12px;background:#000;color:#666;font-size:9px;border-top:1px solid #1a1a1a">
-  Website created by <a href="https://wa.me/27671271038" style="color:#fff;text-decoration:none;font-weight:900">PoisnWeb - 0671271038</a>
+<!-- NEW - NO PRICES, ONLY QUOTE -->
+<div class="quote-section">
+  <div class="label" style="text-align:center">GET YOUR CUSTOM QUOTE</div>
+  <h2 class="bebas" style="font-size:44px;margin-top:8px;line-height:0.9">TELL NTSHIZA<br>WHAT YOU NEED</h2>
+  <p style="font-size:12px;color:#666;margin-top:10px;max-width:340px;margin-left:auto;margin-right:auto">Every project is different. Contact Ntshiza directly for a personalized price based on your needs — photo, video, or studio session.</p>
+
+  <div class="quote-box">
+    <div style="text-align:left">
+      <div class="bebas" style="font-size:20px;letter-spacing:1px">REQUEST A QUOTE</div>
+      <div style="font-size:10px;color:#a1a1aa;margin-top:4px">Ntshiza will reply with a price within 30 mins</div>
+      
+      <input id="name" class="input-dark" placeholder="Your Name">
+      <input id="service" class="input-dark" placeholder="What you need? e.g. Wedding Shoot / Recording / Beat">
+      <input id="date" class="input-dark" placeholder="Date Needed?">
+      
+      <a href="#" onclick="sendQuote(event)" style="display:block;background:linear-gradient(135deg,#f5d76e,#d4a017);color:#000;text-align:center;padding:15px;border-radius:30px;text-decoration:none;font-weight:900;font-size:12px;margin-top:14px;letter-spacing:0.5px">💬 GET PRICE ON WHATSAPP — NTSHIZA</a>
+      <a href="mailto:info@sikasivisions.co.za" style="display:block;background:#fff;color:#000;text-align:center;padding:13px;border-radius:30px;text-decoration:none;font-weight:900;font-size:11px;margin-top:8px;border:1px solid #eee">✉️ EMAIL: info@sikasivisions.co.za</a>
+      
+      <div style="display:flex;gap:8px;margin-top:14px">
+        <div style="flex:1;background:#1a122c;border:1px solid #2a1f3d;padding:10px;border-radius:12px;text-align:center"><div style="font-size:7px;color:#c084fc;letter-spacing:1px;font-weight:900">CALL / WHATSAPP</div><div style="font-size:11px;font-weight:900;margin-top:2px">084 731 1399</div></div>
+        <div style="flex:1;background:#1a122c;border:1px solid #2a1f3d;padding:10px;border-radius:12px;text-align:center"><div style="font-size:7px;color:#f5d76e;letter-spacing:1px;font-weight:900">LOCATION</div><div style="font-size:11px;font-weight:900;margin-top:2px">Pietermaritzburg</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="bebas" style="font-size:28px;letter-spacing:3px">SIKASIVISIONS</div>
+  <div style="font-size:8px;letter-spacing:4px;color:#666;margin-top:4px">CAPTURE. CREATE. INSPIRE.</div>
+  <div style="margin-top:12px;font-size:10px;color:#999">084 731 1399 • info@sikasivisions.co.za • South Africa • Pietermaritzburg<br>Owned by Ntshiza • Photography • Videography • Music Production</div>
+  <div style="margin-top:16px;padding-top:14px;border-top:1px solid #111;font-size:8px;letter-spacing:1px;color:#555">© 2026 SIKASIVISIONS • ALL RIGHTS RESERVED • Website by <a href="https://wa.me/27671271038" style="color:#f5d76e;text-decoration:none;font-weight:900">PoisnWeb - 0671271038</a></div>
 </div>
 
 <script>
-const WA="27847311399"; const EMAIL="info@sikasivisions.co.za";
-function wa(){let d=document.getElementById('d').value;let s=document.getElementById('s').value;window.open(`https://wa.me/${WA}?text=Sawubona%20SIKASIVISIONS%0ADate:${d}%0AService:${s}`,'_blank');}
-function em(){let d=document.getElementById('d').value;let s=document.getElementById('s').value;window.location.href=`mailto:${EMAIL}?subject=Booking ${s} on ${d}`;}
+function sendQuote(e){
+e.preventDefault();
+let n=document.getElementById('name').value||'';
+let s=document.getElementById('service').value||'';
+let d=document.getElementById('date').value||'';
+let msg=`Sawubona Ntshiza - SIKASIVISIONS%0A%0AName: ${n}%0AService Needed: ${s}%0ADate: ${d}%0A%0ANgicela i-quote yakho please.`;
+window.open(`https://wa.me/27847311399?text=${msg}`,'_blank');
+}
 </script>
 </body>
 </html>
