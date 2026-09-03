@@ -63,7 +63,6 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#060606;color:#fff;ov
 .input-dark{width:100%;background:#1a122c;border:1px solid #2a1f3d;padding:14px 18px;border-radius:30px;color:#fff;margin-top:10px;font-size:12px;outline:none}
 .input-dark::placeholder{color:#777}
 .footer{background:#060606;padding:26px 16px;text-align:center;border-top:1px solid #111}
-/* LIGHTBOX ZOOM */
 #lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(15px)}
 #lightbox.active{display:flex}
 #lightbox img{max-width:95vw;max-height:90vh;border-radius:16px;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,0.8);animation:zoomIn 0.3s}
@@ -177,14 +176,30 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#060606;color:#fff;ov
   </div>
 </div>
 
+<!-- FACEBOOK FOLLOW -->
+<div style="background:linear-gradient(135deg,#1877F2,#0d5fca);padding:28px 18px;text-align:center">
+  <div class="bebas" style="font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.7)">CONNECT WITH US</div>
+  <h2 class="bebas" style="font-size:38px;margin-top:6px;line-height:0.9">LIKE & FOLLOW<br>US ON FACEBOOK</h2>
+  <p style="font-size:11px;color:rgba(255,255,255,0.85);margin-top:8px;max-width:300px;margin-left:auto;margin-right:auto">See our latest shoots, behind the scenes, new beats & studio updates.</p>
+  <a href="https://www.facebook.com/share/1SQmuSJQDh/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#1877F2;padding:15px 28px;border-radius:40px;text-decoration:none;font-weight:900;font-size:12px;margin-top:16px;box-shadow:0 10px 30px rgba(0,0,0,0.25)">
+    <svg style="width:20px;height:20px" fill="#1877F2" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    SIKASIVISIONS ON FACEBOOK
+  </a>
+  <div style="margin-top:10px;font-size:8px;color:rgba(255,255,255,0.6);letter-spacing:1px">facebook.com/share/1SQmuSJQDh</div>
+</div>
+
 <div class="footer">
   <div class="bebas" style="font-size:28px;letter-spacing:3px">SIKASIVISIONS</div>
   <div style="font-size:8px;letter-spacing:4px;color:#666;margin-top:4px">CAPTURE. CREATE. INSPIRE.</div>
   <div style="margin-top:12px;font-size:10px;color:#999">084 731 1399 • info@sikasivisions.co.za • South Africa • Pietermaritzburg<br>Owned by Ntshiza • Photography • Videography • Music Production</div>
+  <div style="margin-top:18px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+    <a href="https://www.facebook.com/share/1SQmuSJQDh/" target="_blank" style="background:#1877F2;color:#fff;padding:10px 18px;border-radius:30px;text-decoration:none;font-size:10px;font-weight:900;letter-spacing:1px">📘 FACEBOOK</a>
+    <a href="https://wa.me/27847311399" style="background:#25D366;color:#fff;padding:10px 18px;border-radius:30px;text-decoration:none;font-size:10px;font-weight:900;letter-spacing:1px">💬 WHATSAPP</a>
+    <a href="mailto:info@sikasivisions.co.za" style="background:#222;color:#fff;border:1px solid #333;padding:10px 18px;border-radius:30px;text-decoration:none;font-size:10px;font-weight:900;letter-spacing:1px">✉️ EMAIL</a>
+  </div>
   <div style="margin-top:16px;padding-top:14px;border-top:1px solid #111;font-size:8px;letter-spacing:1px;color:#555">© 2026 SIKASIVISIONS • ALL RIGHTS RESERVED • Website by <a href="https://wa.me/27671271038" style="color:#f5d76e;text-decoration:none;font-weight:900">PoisnWeb - 0671271038</a></div>
 </div>
 
-<!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeZoom()">
   <div class="close" onclick="closeZoom()">✕</div>
   <img id="lightbox-img" src="">
