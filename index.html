@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIKASIVISIONS | Capture. Create. Inspire.</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff}
+.top{background:#fff;color:#000;text-align:center;padding:8px;font-weight:900;font-size:9px;letter-spacing:3px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(8,8,8,0.95);position:sticky;top:0;z-index:99;border-bottom:1px solid #222}
+.logo{display:flex;gap:10px;align-items:center}
+.logo img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #fff;background:#fff}
+.logo-txt{font-weight:900;font-size:14px;letter-spacing:2px}
+.logo-txt small{display:block;font-size:7px;letter-spacing:2px;color:#888;margin-top:2px}
+.nav-btn{background:#fff;color:#000;border:none;padding:10px 16px;border-radius:30px;font-weight:900;font-size:11px}
+.hero{position:relative;padding:40px 20px;text-align:center}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.25}
+.hero-bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,0.1),#080808 85%)}
+.hero-logo{width:120px;height:120px;margin:0 auto 12px auto;border-radius:50%;background:#fff;padding:5px}
+.hero-logo img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.badge{display:inline-block;border:1px solid #333;background:#111;padding:7px 14px;border-radius:30px;font-size:9px;font-weight:800;letter-spacing:1.5px}
+.hero h1{font-size:42px;font-weight:900;margin-top:14px;letter-spacing:3px}
+.hero p.slogan{font-size:10px;letter-spacing:4px;color:#aaa;margin-top:6px;font-weight:800}
+.hero p.desc{color:#999;margin:14px auto 0 auto;max-width:340px;font-size:12px;line-height:1.6}
+.hero-btns{margin-top:20px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:30px;font-weight:900;text-decoration:none;font-size:11px}
+.btn-white{background:#fff;color:#000}
+.btn-dark{background:#1a1a1a;color:#fff;border:1px solid #333}
+.grid{padding:20px 16px;background:#FFFBF7;color:#000;border-radius:32px 32px 0 0}
+.head{text-align:center}
+.head p{font-size:9px;letter-spacing:4px;font-weight:900;color:#999}
+.head h2{font-size:30px;font-weight:900;line-height:0.9;margin-top:8px}
+.card{background:#fff;border:1px solid #eee;border-radius:22px;padding:18px;margin-top:12px}
+.card.dark{background:#111;color:#fff;border-color:#222}
+.card h3{font-size:16px;font-weight:900}
+.card p{font-size:11px;color:#666;margin-top:6px;line-height:1.5}
+.card.dark p{color:#888}
+.gallery{padding:20px 16px;background:#080808}
+.gallery h2{text-align:center;font-size:28px;font-weight:900}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:14px;border:1px solid #222}
+.contact{padding:22px 16px;border-top:1px solid #222}
+.contact h2{font-size:32px;font-weight:900;line-height:0.9}
+.input{width:100%;background:#141414;border:1px solid #2a2a2a;padding:13px 16px;border-radius:30px;color:#fff;margin-top:10px;font-size:12px;outline:none}
+.send{width:100%;border:none;padding:14px;border-radius:30px;font-weight:900;margin-top:10px;font-size:12px}
+.send-w{background:#fff;color:#000}
+.send-d{background:#222;color:#fff;border:1px solid #333}
+.info-box{background:#141414;padding:12px;border-radius:12px;border:1px solid #222}
+.footer{text-align:center;padding:16px;color:#666;font-size:8px;letter-spacing:1.2px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="top">SIKASIVISIONS — CAPTURE. CREATE. INSPIRE. — SOUTH AFRICA</div>
+<div class="nav">
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+    <div class="logo-txt">SIKASIVISIONS<small>CAPTURE. CREATE. INSPIRE.</small></div>
+  </div>
+  <button class="nav-btn" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">BOOK</button>
+</div>
+
+<div class="hero">
+  <div class="hero-bg"><img src="IMG-20260902-WA0079.jpg"></div>
+  <div class="hero-logo"><img src="logo.jpg"></div>
+  <div class="badge">PIETERMARITZBURG • PHOTOGRAPHY • MUSIC STUDIO</div>
+  <h1>SIKASIVISIONS</h1>
+  <p class="slogan">CAPTURE. CREATE. INSPIRE.</p>
+  <p class="desc">Owned by <b>Ntshiza</b>. Photography, Videography, Vocal Recording, Mixing, Mastering & Beat Making. Based in South Africa.</p>
+  <div class="hero-btns">
+    <a class="btn btn-white" href="https://wa.me/27847311399?text=Sawubona%20SIKASIVISIONS">💬 WHATSAPP: 084 731 1399</a>
+    <a class="btn btn-dark" href="mailto:info@sikasivisions.co.za">✉️ EMAIL US</a>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="head"><p>OUR SERVICES</p><h2>Photo, Video<br>& Music Studio</h2></div>
+  
+  <div class="card">
+    <h3>📸 Photography & Videography</h3>
+    <p>Events, portraits, weddings, matric dance, corporate - high quality capture.</p>
+  </div>
+  <div class="card dark">
+    <h3>🎙️ Vocal Recording</h3>
+    <p>Professional studio for Amapiano, Hip Hop, Gospel, Afro House.</p>
+  </div>
+  <div class="card">
+    <h3>🎚️ Mixing & Mastering</h3>
+    <p>Make your song ready for Spotify, Apple Music, TikTok - loud & clean.</p>
+  </div>
+  <div class="card dark">
+    <h3>🥁 Beat Making / Production</h3>
+    <p>Custom beats - Amapiano, 3-Step, Afrobeat, Hip Hop, Gqom. Exclusive rights available.</p>
+  </div>
+</div>
+
+<div class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-grid">
+    <img src="IMG-20260902-WA0079.jpg">
+    <img src="IMG-20260902-WA0077.jpg">
+    <img src="IMG-20260902-WA0076.jpg">
+    <img src="IMG-20260902-WA0075.jpg">
+  </div>
+</div>
+
+<div class="contact" id="book">
+  <h2>Book<br>SIKASIVISIONS.</h2>
+  <p style="color:#888;margin-top:6px;font-size:11px">Tell us what you need - photo or studio session.</p>
+  <input id="d" class="input" placeholder="Date (e.g. 10 Sept 2026)">
+  <input id="s" class="input" placeholder="Service: Photography / Recording / Mixing / Beat">
+  <button class="send send-w" onclick="wa()">💬 BOOK ON WHATSAPP — 084 731 1399</button>
+  <button class="send send-d" onclick="em()">✉️ info@sikasivisions.co.za</button>
+  
+  <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div class="info-box"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">CALL / WHATSAPP</small><br><b style="font-size:12px">084 731 1399</b></div>
+    <div class="info-box"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">EMAIL</small><br><b style="font-size:9px">info@sikasivisions.co.za</b></div>
+    <div class="info-box" style="grid-column:1/3"><small style="color:#aaa;font-size:7px;letter-spacing:2px;font-weight:900">OWNER</small><br><b style="font-size:11px">Ntshiza — South Africa</b></div>
+  </div>
+</div>
+
+<div class="footer">© 2026 SIKASIVISIONS • CAPTURE. CREATE. INSPIRE. • 084 731 1399 • INFO@SIKASIVISIONS.CO.ZA<br>PHOTOGRAPHY • VIDEOGRAPHY • RECORDING • MIXING • MASTERING • BEAT MAKING</div>
+<div style="text-align:center;padding:12px;background:#000;color:#666;font-size:9px;border-top:1px solid #1a1a1a">
+  Website created by <a href="https://wa.me/27671271038" style="color:#fff;text-decoration:none;font-weight:900">PoisnWeb - 0671271038</a>
+</div>
+
+<script>
+const WA="27847311399"; const EMAIL="info@sikasivisions.co.za";
+function wa(){let d=document.getElementById('d').value;let s=document.getElementById('s').value;window.open(`https://wa.me/${WA}?text=Sawubona%20SIKASIVISIONS%0ADate:${d}%0AService:${s}`,'_blank');}
+function em(){let d=document.getElementById('d').value;let s=document.getElementById('s').value;window.location.href=`mailto:${EMAIL}?subject=Booking ${s} on ${d}`;}
+</script>
+</body>
+</html>
